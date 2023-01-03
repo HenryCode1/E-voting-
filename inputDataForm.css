@@ -1,0 +1,232 @@
+
+ *{
+   box-sizing: border-box;
+ }
+ body{
+   margin: 0%;
+   padding: 0%;
+   height: 100%;
+ }
+ .header{
+ height:66px;
+ box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+ }
+ ul{
+   float: right;
+ }
+ .nav{
+   float: left;
+   height: inherit;
+   display: flex;
+   align-items: center;
+   border-right:1px solid #e3dcdc;
+   margin-left: 9px;
+ }
+ .menu li{
+   list-style: none;
+ 
+ }
+ .menu li a{
+   text-decoration: none;
+  color:#0f0f0a;
+   font-size: 1.0rem;
+ }
+ .menu{
+   height: inherit;
+   width: 40%;
+   display: flex;
+   justify-content: space-around;
+   align-content: center;
+   align-items: center;
+   border-left:1px solid  #e3dcdc;
+   padding: 0%;
+   margin: 0%;
+ 
+ }
+ .menu li a .s{
+   padding: 0%;
+   margin: 0%;
+   width: 30px;
+   height: 30px;
+   border-radius: 4.1rem;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+ }
+ .menu li a .s img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ .nav label{
+  display: flex;
+  align-items: center;
+  margin: 5rem;
+  font-size: 1.3rem;
+  color:#0f0f0a;
+  
+ } 
+ .main{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   min-height: 100vh;
+   width: 100%;
+   padding-bottom: 10px;
+ }
+ .main .form_container{
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   overflow: hidden;
+   height:inherit;
+   margin-top: 5px;
+   
+ 
+ }
+ 
+ 
+ 
+  
+.form_container .form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+   width: 620px;
+   padding:20px 10px;
+   background: #fff;
+   
+   border-radius: 5px;
+ }
+ .form form{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   z-index: 5000;
+ }
+ .form form input{
+   width: 90%;
+   height: 45px;
+   margin:6px 0px;
+   padding-bottom: 0px 10px;
+   outline: none;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 7px;
+ }
+ input[type="submit"]{
+   background: #0bad8a;
+   color:#ffff;
+   outline: none;
+   border:none;
+   text-transform: uppercase;
+   margin-top: 10px;
+   border-radius: 3px;
+   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+ }
+ 
+ 
+
+   .footer{
+    
+    width: 100%;
+    height: 53px;
+    border-top: ipx solid rgb(187, 174, 174);
+    
+  }
+  .footer .icons{
+    width: 200px;
+    
+    display: flex;
+    padding:10px;
+   
+    justify-content: space-around;
+    float: left;
+  }
+  .footer .icons .imgss{
+    width: 30px;
+    height: 30px;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 4.5rem;
+   
+    overflow: hidden;
+    display: flex;
+    float: left;
+  }
+  .footer .icons .imgss img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .footer .reference{
+   width: 200px;
+   display: flex;
+   padding:10px;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   text-align: center;
+    float:right;
+   
+  }
+  
+  @media(max-width: 450px){
+   .inner_container{
+     display: grid;
+     grid-template-columns: 100%;
+   
+   } 
+ 
+   
+ .nav{
+ 
+   border:none;
+   padding: 0%;
+   margin-right: 20%;
+ }
+ .menu li a .s{
+  
+   width: 20px;
+   height: 20px;
+   
+ }
+ 
+ .menu{
+   float: left;
+   width: 0%;
+   
+   border:none;
+   margin-left: 30%;
+ 
+ }
+ .nav label{
+  display: flex;
+  align-items: center;
+  margin: 0rem;
+  font-size: 1.3rem;
+  color:#0f0f0a;
+  
+ } 
+ .form{
+ 
+     width: 100px;
+     
+   }
+   .form form input{
+     width: 40%;
+   
+   }
+   
+   
+  }
+      

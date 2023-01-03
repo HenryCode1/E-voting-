@@ -1,0 +1,260 @@
+
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+}
+.header{
+height:66px;
+box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+ul{
+  float: right;
+}
+.nav{
+  float: left;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  border-right:1px solid #e3dcdc;
+  margin-left: 9px;
+}
+.menu li{
+  list-style: none;
+
+}
+.menu li a{
+  text-decoration: none;
+ color:#0f0f0a;
+  font-size: 1.0rem;
+}
+.menu{
+  height: inherit;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  border-left:1px solid  #e3dcdc;
+  padding: 0%;
+  margin: 0%;
+
+}
+.menu li a .s{
+  padding: 0%;
+  margin: 0%;
+  width: 30px;
+  height: 30px;
+  border-radius: 4.1rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.menu li a .s img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav label{
+ display: flex;
+ align-items: center;
+ margin: 5rem;
+ font-size: 1.3rem;
+ color:#0f0f0a;
+ 
+} 
+.main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.main .container{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  height:inherit;
+  margin-top: 5px;
+  
+
+}
+
+  .b{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .b label{
+    font-size: 1.3rem;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    border-top: 1px solid #f3f3f3;
+  }
+  .btn-option{
+    width:90%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px;
+  }
+  .btn-option button{
+    width: 240px;
+    height: 40px;
+    background: rgb(135, 238, 135);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn-option button:hover{
+    background-color: red;
+  }
+  .details .wrap-{
+    width: 60%;
+    display: flex;
+    align-items: center;
+   float:right;
+  }
+  .details .wrap- input[type="checkbox"]{
+    
+    width: 20px;
+    height: 20px;
+    color: green;
+  }
+.inner_container{
+  margin-top: 30px;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.inner_container .candidate{
+    
+    display: flex;
+    flex-direction: column;
+  
+    border-radius: 15px;
+    border:1px solid #f7f7f7;
+    flex-grow: 0.5;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.inner_container .candidate .imgs{
+    width: 200px;
+    height: 210px;
+    margin: 10%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+.inner_container .candidate .imgs img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+  .footer{
+   
+   width: 100%;
+   height: 53px;
+   border-top: ipx solid rgb(187, 174, 174);
+   
+ }
+ .footer .icons{
+   width: 200px;
+   
+   display: flex;
+   padding:10px;
+  
+   justify-content: space-around;
+   float: left;
+ }
+ .footer .icons .imgss{
+   width: 30px;
+   height: 30px;
+   display: flex;
+  
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   border-radius: 4.5rem;
+   display: flex;
+   float: left;
+   overflow: hidden;
+ }
+ .footer .icons .imgss img{
+   width: 100%;
+   height:100%;
+   object-fit: cover;
+ }
+ .footer .reference{
+  width: 200px;
+  display: flex;
+  padding:10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+   float:right;
+  
+ }
+ @media(max-width: 450px){
+  .inner_container{
+    display: grid;
+    grid-template-columns: 100%;
+  
+  } 
+
+  
+.nav{
+
+  border:none;
+  padding: 0%;
+  margin-right: 20%;
+}
+.menu li a .s{
+ 
+  width: 20px;
+  height: 20px;
+  
+}
+
+.menu{
+  float: left;
+  width: 0%;
+  
+  border:none;
+  margin-left: 35%;
+
+}
+.nav label{
+ display: flex;
+ align-items: center;
+ margin: 0rem;
+ font-size: 1.3rem;
+ color:#0f0f0a;
+ 
+} 
+.form{
+
+    width: 250px;
+    
+  }
+}

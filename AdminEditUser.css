@@ -1,0 +1,358 @@
+
+*{
+       box-sizing: border-box;                                           
+}
+body{
+    padding: 0%;
+    margin: 0%;                                              
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex; 
+     
+   
+}
+.side-bar{
+     width: 20%;
+     height:auto;
+     background-color: #000fff;
+     color:#fff;
+                                                
+}
+.main_board{
+  width: 80%;
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+
+  .details-admin{
+        margin-top: 3.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    .details-admin ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .details-admin ul li{
+        width: 100%;
+        margin: 10px 5px;
+         display: flex;
+         align-items: center;
+    }
+    .details-admin ul li .img-icon{
+        width: 20px;
+        height: 20px;
+
+        border-radius: 4.5rem;
+    }
+    .details-admin ul li .img-icon img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .details-admin ul li:hover{
+        border-bottom: 1px solid red;
+    
+    }
+    .details-admin ul li a{
+        color:#fff;
+    }
+.admin-icon{
+    margin-top: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.admin-icon .img-admin{
+    width: 50px;
+    height: 50px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin: 0% auto;
+    
+}
+.admin-icon .img-admin img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.view-user{
+ width: 90%;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
+
+ border-radius: 9px;
+ margin: 0% auto;
+ border: 1px solid #eeeeee; 
+   margin-bottom: 2.0rem;                                            
+}
+.label{
+    width: 90%;
+    height: 40px;
+    padding: 40px 10px; 
+    margin: 0% auto;                                             
+}
+.nav_content li a .s{
+  
+  width: 30px;
+  height: 30px;
+  border-radius: 4.1rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 12px;
+}
+.nav_content li a .s img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.view-user .form{
+    display: flex;
+    flex-direction: column;
+
+
+    width: 90%;
+    padding:20px 10px;
+    background: #fff;
+    
+    border-radius: 5px;
+    z-index: 9000;
+  }
+  .form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .form form input[type="text"]{
+    width: 100%;
+    height: 40px;
+    margin:6px 0px;
+    
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+  }
+  input[type="submit"]{
+      float: right;
+      width: 90px;
+      height: 40px;
+    background: #0bad8a;
+    color:#ffff;
+    outline: none;
+    border:none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+.main_board .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);                                            
+}
+.nav .searchs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+    
+}
+.nav .searchs input[type="search"]{
+    margin: 2px;
+    width: 400px;
+    height: 40px;
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+
+}
+.nav .searchs   input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    background: #000fff;
+    color:#ffff;
+    outline: none;
+    border:none;
+    text-transform: uppercase;
+    
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  }
+  .nav .nav_content{
+    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   padding-right: 9px;
+}
+
+.nav .nav_content button{
+    
+    outline: none;
+    border:none;
+    background: #000fff;
+    border-radius: 5px;
+    height: 20px;
+    padding:0;
+    
+}
+.nav .nav_content button:hover{
+    background:transparent;
+}
+
+
+
+@media(max-width: 450px){
+    .nav .searchs{
+    display: none;
+    
+    
+    
+}
+.nav .nav_content button{
+height: 40px;
+width: 50px;
+}
+.nav_content .search{
+display: none;
+}
+
+.nav .nav_content{
+margin-left: 2.1rem;
+
+
+}
+.details-admin ul li a{
+        display: none;
+    }
+.details-admin ul li{
+    margin-right: 3.1rem;
+    }
+.side-bar{
+ 
+ height: 154vh;                                         
+}
+
+.view-user{
+overflow-x: auto;                                            
+}
+table{
+   width: 90px;
+   overflow-x: auto;
+}
+}
+@media(min-width: 451px) and (max-width: 540px){
+ 
+    .nav .searchs{
+    display: none;
+
+}
+.nav .nav_content{
+margin-left: 2.1rem;
+
+
+}
+
+.side-bar{
+ 
+ height: 140vh;                                         
+}
+.side-bar{
+ 
+ height: 149vh;                                         
+}
+
+}
+@media(min-width: 541px) and (max-width: 768px){
+ 
+.view-user{
+overflow-x: auto;                                            
+}
+.nav .searchs input[type="search"]{
+margin: 4px;
+width: 120px;
+}
+
+.nav .nav_content button{
+
+height: 40px;
+width: 80px;
+}
+.nav .searchs   input[type="submit"]{
+width: 64px;
+height: 40px;
+
+}
+.side-bar{
+ 
+ height: 140vh;                                         
+}
+
+}
+@media(min-width: 769px) and (max-width: 1024px){
+
+.nav .search input[type="search"]{
+margin: 4px;
+width: 100px;
+}
+.nav .nav_content{
+
+padding-right: 6%;
+
+}
+
+
+.side-bar{
+ 
+ height: 130vh;                                         
+}
+
+.nav .nav_content button{
+height: 30px;
+padding:0;
+
+}
+
+
+
+}
+@media(min-width: 1025px) and (max-width: 1200px){
+  
+.side-bar{
+ 
+ height: 140vh;                                         
+}
+}
+@media(min-width: 1201px){
+    
+body{
+ background-color: #eeeeee;
+}
+}
